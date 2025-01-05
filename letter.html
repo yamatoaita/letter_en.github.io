@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="stylesheet" href="letter.css">
+        <title>秘密の手紙</title>
+    </head>
+
+    <body>      
+        <div class="title">New Year's Letter</div>
+        <div class="explain" id="explain">Please press the mail icon, and read letters.</div>
+        <div class="modal" id="modal">
+            <img src="binsenn.jpg" class="binsenn" id="binsenn">
+            <div class="writting" id="writting" contenteditable="true">　　　Write contents here"</div>
+            <div class="writting" id="sender" contenteditable="true">From NoName</div>
+            <div class="writting" id="page_number">１枚目</div>
+
+            <img class="letter_contents_btn" id="btn_before" src="btn_befpage.png">
+            <img class="letter_contents_btn" id="btn_finish" src="btn_finish.png">
+            <img class="letter_contents_btn" id="btn_next" src="btn_nextpage.png">
+            
+        </div>
+        <div class="parent">
+
+        </div>
+        <img src="letter_btn.png" class="btn" id="showbtn">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
+
+        <script type="module" src="letter.js" ></script>
+    </body>
+</html>                                                                                                                                                             

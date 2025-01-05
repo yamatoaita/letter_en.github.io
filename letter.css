@@ -1,0 +1,263 @@
+body{
+    background-color: rgb(244, 244, 193);
+
+}
+
+
+:root{
+    --explain_l : 50px;
+}
+
+.title{
+    color: rgba(0, 0, 0, 0.527);
+    font-family: Yu Mincho;
+    font-size: 100px;
+    
+    text-align: center;
+    position: relative;
+
+}
+@media(max-width: 480px){
+    .title{
+        font-size: 50px;
+    }
+}
+
+.explain{
+    color: rgba(0, 0, 0, 0.527);
+    font-family: Yu Mincho;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    left: var(--explain_l);
+}
+@media(max-width: 480px){
+    .explain{
+        top: 30px;
+        left: calc(var(--explain_l)+10);
+        font-size: 15px;
+    }
+}
+.entry{
+    margin: 10vh 80vh 0vh;
+}
+.entrybtn{
+    position: relative;
+    bottom: 25px;
+    margin: 0vh 105vh 0vh;
+}
+@media(max-width: 480px){
+    .entry{
+        height: 50px;
+        margin: 25vh 8vh 0vh;
+    }
+
+    .entrybtn{
+        width: 100px;
+        height: 50px;
+        bottom: 53px;
+        margin: 0vh 35vh 0vh;
+    }
+}
+/*-----------------------------------------------------*/
+.parent{
+    
+    background-color: rgba(255, 166, 0, 0.396);
+    border: 5px solid black;;
+    border-color: black;                                                                                                                                                                                                                                                                                                                       
+    height: 300px;
+    width: 800px;
+    margin: 20px 40vh 0px;
+
+    overflow-x: hidden;
+    overflow-y: scroll;   /* 垂直スクロールバーを表示 */
+}
+.btn{
+    margin: 0vh 80vh 0vh;
+}
+.letters{
+    width: 80px;
+    margin: 14px 50px 0px;
+    position: relative;
+}
+.contents{
+    font-weight: bold;
+    color: black;
+
+    width: 590px;
+    font-size: 30px;
+    margin: -70px 170px 0px;
+    position: relative;
+}
+
+
+@media(max-width: 480px){
+    .parent{
+        
+        width: 350px;
+        margin: 60px 0px 0px;
+    }
+
+    .btn{
+        margin: 0vh 10vh 0vh;
+    }
+
+    .letters{
+        width: 50px;
+        margin: 5px 0px 0px;
+
+    }
+    .contents{
+ 
+        width: 280px;
+        font-size: 15px;
+        margin: -35px 50px 0px;
+        bottom: 12px;
+        left: 10px;
+    }
+    
+}
+
+
+.modal{
+    display: none;
+    position:  fixed;
+    margin: -100px 47vh 0px;
+    height: 75vh;
+    width: 100vh;
+    z-index: 99;  
+}
+.binsenn{
+    position: relative;
+    width: 100vh;
+    
+
+}
+.writting{
+    font-family: Yu Mincho;
+    color: black;
+    /*height: 320px;*/
+
+    
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 30px;
+    
+    
+    position: absolute;
+
+    outline: none; /* フォーカス時の枠線を消す */
+  
+}
+#writting{
+
+    width: 490px;
+    margin: 19.5vh 18vh 0px;
+
+    display: inline-block;
+    
+}
+#sender{
+    
+    background-color: rgba(244, 250, 67, 0.614);
+    margin: 12.5vh 17vh 0px;
+}
+#page_number{
+    background-color:  rgba(244, 250, 67, 0.614);
+    width: 140px;
+    margin: 12.5vh 65vh 0vh;
+}
+.letter_contents_btn{
+    margin: 0px 30px 0px;
+    width: 120px;
+
+}
+#btn_next{
+    position: fixed;
+    left: 790px;
+    bottom: 50px;
+}
+#btn_before{
+    
+    position: fixed;
+    left: 450px;
+    bottom: 50px;
+}
+#btn_finish{
+    position: fixed;
+    left: 620px;
+    bottom: 50px;
+
+}
+
+.registerbtn{
+    display: none;
+}
+
+@media(max-width: 480px){
+    .modal{
+
+        margin: 0px 0vh 0px;
+        position: absolute;
+        top: 170px;
+        width: 360px;
+        height: 430px;  
+    }
+    
+    .binsenn{
+        height: 260px;
+        width: 340px;
+
+    }
+    
+    .writting{
+        line-height: 1.5;
+        font-size: 14px;      
+    }
+    #writting{
+
+        width: 225px;
+        position: absolute;
+        top: 69px;
+        right: 80px;
+        margin: 0px 0px 0px;
+    }
+    #sender{
+        position: absolute;
+        top: 48px;
+        left: 53px;
+        margin: 0px 0px 0px;
+    }
+    #page_number{
+        position: absolute;
+        top: 48px;
+        right: 80px;
+        width: 50px;
+        margin: 0px 0px 0px;
+    }
+    
+    .letter_contents_btn{
+        margin: 0px 0px 0px;
+        width: 70px;
+    }
+    
+    #btn_next{
+        position: absolute;
+        left: 230px;
+        bottom: 180px;
+    }
+    
+    #btn_before{
+        position: absolute;
+        left: 60px;
+        bottom: 180px;
+    }
+    
+    #btn_finish{
+        position: absolute;
+        left: 145px;
+        bottom:180px;
+    
+    }   
+}
+
