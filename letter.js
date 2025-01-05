@@ -357,7 +357,7 @@ class SiteSystem{
 
     register(){//【➡constracter】
         var register_passwards = [
-            "tea123","cookie423"  
+            "tea123","cookie423","test1"  
         ]
          
        
@@ -516,6 +516,8 @@ class SiteSystem{
             
             this.id += 1;//idを増加
         }
+
+      
            
     }
 
@@ -541,6 +543,11 @@ class SiteSystem{
 
         const sender ="From " +  item[0];//差出人の取得
         this.div_sender.innerHTML = sender;//そして、画面に表示
+        if(item[0]=="Production Team"){
+            this.div_writting.contentEditable = "false";
+        }else{
+            this.div_writting.contentEditable = "true";
+        }
 
         this.pages= item[1];//ページ内容の取得　リスト型
         this.div_writting.innerHTML = this.pages[this.page_index];//１ページ目を表示
