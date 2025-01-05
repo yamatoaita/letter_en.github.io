@@ -108,49 +108,7 @@ class SiteSystem{
     
                 }
 
-                {//ドロップ and ダウン　禁止設定
-                    {//びんせん
-                        this.img_letter.addEventListener('dragover', function(event) {
-                            event.preventDefault();  // ドラッグオーバー時に挿入を無効化
-                        });
-                        // ドロップイベントを無効にする
-                        this.img_letter.addEventListener('drop', function(event) {
-                            event.preventDefault();  // ドロップ時に画像挿入を無効化
-                        });
-                    }
-                    
-                    {//前ボタン
-                        this.btn_before.addEventListener('dragover', function(event) {
-                            event.preventDefault();  // ドラッグオーバー時に挿入を無効化
-                        });
-                        // ドロップイベントを無効にする
-                        this.btn_before.addEventListener('drop', function(event) {
-                            event.preventDefault();  // ドロップ時に画像挿入を無効化
-                        });
-                    }
-                    
-                    {//次へボタン
-                        this.btn_next.addEventListener('dragover', function(event) {
-                            event.preventDefault();  // ドラッグオーバー時に挿入を無効化
-                        });
-                        // ドロップイベントを無効にする
-                        this.btn_next.addEventListener('drop', function(event) {
-                            event.preventDefault();  // ドロップ時に画像挿入を無効化
-                        });
-                    }
-                    
-                    {//終了ボタン
-                        this.btn_finish.addEventListener('dragover', function(event) {
-                            event.preventDefault();  // ドラッグオーバー時に挿入を無効化
-                        });
-                        // ドロップイベントを無効にする
-                        this.btn_finish.addEventListener('drop', function(event) {
-                            event.preventDefault();  // ドロップ時に画像挿入を無効化
-                        });
-                    }
-
-                
-                }
+           
                 
                 get(this.passward_dbRef).then((snapshot) => {//page2, letter.indexの時のデータ取り出し
     
