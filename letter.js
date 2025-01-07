@@ -243,7 +243,7 @@ class SiteSystem{
         var exit_flg = false;
 
         
-        if(this.div_writting.innerHTML.indexOf('<img src="https://yamatoaita.github.io/library_en.github.io/binsenn.jpg" class="binsenn" id="binsenn">') !== -1){
+        if(this.div_writting.innerHTML.indexOf('<img src="http://127.0.0.1:5500/binsenn.jpg" class="binsenn" id="binsenn">') !== -1){
             this.div_writting.innerHTML = this.div_writting.innerHTML.replaceAll("<img src=\"http://127.0.0.1:5500/binsenn.jpg\" class=\"binsenn\" id=\"binsenn\">","");
         };
 
